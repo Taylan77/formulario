@@ -6,17 +6,45 @@
 }
 
 body{
-    background: blue url(../imagens/binary-1536646.jpg) no-repeat ;
+    background: blue url(../imagens/binary.jpg) no-repeat ;
     width: 100vw;
     height: 100vh;
     background-size: cover;
     background-position: center center;
 }
 
+body.modo-escuro{
+    background: black url(../imagens/prog.jpg) no-repeat
+}
+
 header{
     font-size: 1.3em;
     color: white;
     text-align: center;
+}
+
+#tema{
+    display: flex;
+    justify-content: end;
+    margin-right: 35px;
+}
+
+#alterar-tema{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.botao{
+    width: 100px;
+    height: 80px;
+    border-radius: 50%;
+    transition: 0.2s ease-in-out;
+}
+
+.botao:hover{
+    transform: scale(1.10);
+    cursor: pointer;
 }
 
 h1{
@@ -32,8 +60,8 @@ p{
 
 section{
     position: absolute;
-    /* background-color: aliceblue; */
-    background-color: rgba(0, 0, 0, 0.153); 
+    /* background-;color: rgba(255, 255, 255, 0.200) */
+    background-color: rgba(0, 0, 0, 0.200);
     margin-top: 20px;
     width: 35%;
     height: 90%;
@@ -41,6 +69,12 @@ section{
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 20px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.modo-escuro section{
+    background-color: rgba(255, 255, 255, 0.250);
+    box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.5);
 }
 
 .campo{
